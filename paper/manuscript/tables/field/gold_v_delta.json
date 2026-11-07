@@ -1,0 +1,13 @@
+{
+  "n": 330,
+  "interim_pos": 40,
+  "v2_pos": 33,
+  "v3_pos": 46,
+  "newly_positive_vs_interim": 12,
+  "flipped_to_negative": 6,
+  "rule_gain": {
+    "R12": 8,
+    "R15": 3,
+    "R13": 1
+  }
+}

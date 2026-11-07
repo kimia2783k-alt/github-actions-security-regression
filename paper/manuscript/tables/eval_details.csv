@@ -1,0 +1,16 @@
+pair_id,agent,gold,policy_pred,baseline_pred,baseline_method,rules,seconds
+sample-human_r01_write_all,human,1,1,1,zizmor,R01|R02,0.030978
+sample-human_safe_pin,human,0,0,1,zizmor,,0.029033
+sample-no_regression_already_write_all,human,0,0,1,zizmor,,0.026436
+sample-r01_permissions_write_all,devin,1,1,1,zizmor,R01|R02,0.040174
+sample-r02_permissions_removed,claude_code,1,1,1,zizmor,R02,0.031575
+sample-r03_pr_target,jules,1,1,1,zizmor,R03|R04,0.033314
+sample-r05_unpinned_action,copilot,1,1,1,zizmor,R05,0.031167
+sample-r06_new_unpinned_third_party,codex,1,1,1,zizmor,R06,0.05545
+sample-r07_secret_echo,cursor,1,1,1,zizmor,R07,0.039858
+sample-r08_removed_security_job,devin,1,1,1,zizmor,R08,0.05314
+sample-r10_script_injection,claude_code,1,1,1,zizmor,R10,0.030328
+sample-r11_self_hosted,jules,1,1,1,zizmor,R11,0.020659
+sample-safe_add_codeql,human,0,0,1,zizmor,,0.030404
+sample-safe_change,human,0,0,1,zizmor,,0.029425
+sample-safe_new_pinned_action,human,0,0,1,zizmor,,0.028024

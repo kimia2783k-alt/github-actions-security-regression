@@ -1,0 +1,9 @@
+name: Bot
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hi"

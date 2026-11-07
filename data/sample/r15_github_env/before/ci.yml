@@ -1,0 +1,8 @@
+name: Build
+on: [pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "SAFE=1" >> "$GITHUB_ENV"

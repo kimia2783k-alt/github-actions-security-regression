@@ -1,0 +1,15 @@
+Security_Regressions_GHA_AI_Agents_Manuscript.docx
+  out_of_scope=True
+  second_annotator_en=True
+  dual_future=False
+  size=106265
+Security_Regressions_GHA_AI_Agents_Manuscript_FA.docx
+  out_of_scope=False
+  second_annotator_en=False
+  dual_future=False
+  size=44584
+Project_Guide_EN_0_to_100.docx
+  out_of_scope=True
+  second_annotator_en=True
+  dual_future=False
+  size=84794

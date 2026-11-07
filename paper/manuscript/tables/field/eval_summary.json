@@ -1,0 +1,89 @@
+{
+  "n": 330,
+  "regression_rate": 0.1393939393939394,
+  "policy_validator": {
+    "tp": 43,
+    "fp": 6,
+    "tn": 278,
+    "fn": 3,
+    "precision": 0.8776,
+    "recall": 0.9348,
+    "f1": 0.9053,
+    "fpr": 0.0211,
+    "fnr": 0.0652
+  },
+  "baseline": {
+    "tp": 44,
+    "fp": 258,
+    "tn": 26,
+    "fn": 2,
+    "precision": 0.1457,
+    "recall": 0.9565,
+    "f1": 0.2529,
+    "fpr": 0.9085,
+    "fnr": 0.0435
+  },
+  "baseline_after_only": {
+    "tp": 44,
+    "fp": 258,
+    "tn": 26,
+    "fn": 2,
+    "precision": 0.1457,
+    "recall": 0.9565,
+    "f1": 0.2529,
+    "fpr": 0.9085,
+    "fnr": 0.0435
+  },
+  "baseline_before_after_diff": {
+    "tp": 34,
+    "fp": 50,
+    "tn": 234,
+    "fn": 12,
+    "precision": 0.4048,
+    "recall": 0.7391,
+    "f1": 0.5231,
+    "fpr": 0.1761,
+    "fnr": 0.2609
+  },
+  "zizmor_cli_available": true,
+  "mean_seconds": 0.04851911272694865,
+  "rule_counts": {
+    "R12": 17,
+    "R06": 37,
+    "R14": 2,
+    "R02": 1,
+    "R03": 1,
+    "R07": 5,
+    "R10": 2,
+    "R15": 2,
+    "R05": 6,
+    "R09": 2,
+    "R13": 2
+  },
+  "per_agent_regression_rate": {
+    "Claude_Code": 0.05,
+    "Copilot": 0.0,
+    "Cursor": 0.5,
+    "Devin": 0.0,
+    "OpenAI_Codex": 0.18,
+    "human": 0.075
+  },
+  "ai_vs_human": {
+    "ai_rate": 0.16,
+    "human_rate": 0.075,
+    "table": [
+      [
+        40,
+        210
+      ],
+      [
+        6,
+        74
+      ]
+    ],
+    "test": "chi2",
+    "chi2": 2.9759424755052053,
+    "dof": 1,
+    "p_value": 0.0845108905362352
+  }
+}

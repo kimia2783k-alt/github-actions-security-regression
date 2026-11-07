@@ -1,0 +1,18 @@
+{
+  "freeze_id": "pin-semantics-v0.5",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.7",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "cpu_count_logical": 24,
+  "packages": {
+    "ruamel.yaml": "0.19.1",
+    "pytest": "9.1.1",
+    "scipy": "1.18.1"
+  },
+  "zizmor": "1.31.1",
+  "zizmor_on_path": true,
+  "manifest_sha256": "d1c7339c5877ddf90ef6184f82cb4c68ec5cf936dadff7aafdcda8dfd1640f11",
+  "public_url": "[URL_TO_BE_FILLED]",
+  "release_commit": "[COMMIT_TO_BE_FILLED]"
+}

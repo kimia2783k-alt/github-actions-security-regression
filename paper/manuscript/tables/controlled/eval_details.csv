@@ -1,0 +1,16 @@
+pair_id,agent,gold,policy_pred,baseline_after_pred,baseline_diff_pred,baseline_after_method,baseline_diff_method,rules,seconds
+sample-human_r01_write_all,human,1,1,1,0,zizmor_after_only,zizmor_before_after_diff,R01|R02,0.010468
+sample-human_safe_pin,human,0,0,1,0,zizmor_after_only,zizmor_before_after_diff,,0.009397
+sample-no_regression_already_write_all,human,0,0,1,0,zizmor_after_only,zizmor_before_after_diff,,0.009978
+sample-r01_permissions_write_all,devin,1,1,1,0,zizmor_after_only,zizmor_before_after_diff,R01|R02,0.009576
+sample-r02_permissions_removed,claude_code,1,1,1,1,zizmor_after_only,zizmor_before_after_diff,R02,0.009446
+sample-r03_pr_target,jules,1,1,1,1,zizmor_after_only,zizmor_before_after_diff,R03|R04,0.02637
+sample-r05_unpinned_action,copilot,1,1,1,1,zizmor_after_only,zizmor_before_after_diff,R05,0.023292
+sample-r06_new_unpinned_third_party,codex,1,1,1,1,zizmor_after_only,zizmor_before_after_diff,R06,0.030015
+sample-r07_secret_echo,cursor,1,1,1,0,zizmor_after_only,zizmor_before_after_diff,R07,0.019545
+sample-r08_removed_security_job,devin,1,1,1,0,zizmor_after_only,zizmor_before_after_diff,R08,0.033857
+sample-r10_script_injection,claude_code,1,1,1,1,zizmor_after_only,zizmor_before_after_diff,R10,0.017806
+sample-r11_self_hosted,jules,1,1,1,0,zizmor_after_only,zizmor_before_after_diff,R11,0.020303
+sample-safe_add_codeql,human,0,0,1,1,zizmor_after_only,zizmor_before_after_diff,,0.020144
+sample-safe_change,human,0,0,1,0,zizmor_after_only,zizmor_before_after_diff,,0.023247
+sample-safe_new_pinned_action,human,0,0,1,1,zizmor_after_only,zizmor_before_after_diff,,0.026071

@@ -1,0 +1,42 @@
+# Secrets — never commit
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+
+# Python / tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Large / regenerable data (labels + sample fixtures are enough to report metrics)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/workflow_pairs/.gitkeep
+*.parquet
+!data/sample/**
+
+# Editor
+.idea/
+.vscode/
+paper/progress.md.bak
+
+# Local agent / OS junk
+Thumbs.db
+desktop.ini
+*.log

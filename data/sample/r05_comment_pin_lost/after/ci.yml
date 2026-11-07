@@ -1,0 +1,11 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Same floating tag without the documentation comment — still not a pin loss.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20

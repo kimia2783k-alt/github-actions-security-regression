@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Security Regressions in AI-Agent-Modified GitHub Actions — Replication Package"
+message: "If you use this software or dataset artifacts, please cite this project and AIDev."
+type: software
+authors:
+  - family-names: "[Author]"
+    given-names: "[Name]"
+version: 0.1.0
+date-released: "2026-10-21"
+keywords:
+  - GitHub Actions
+  - CI/CD security
+  - AI coding agents
+  - security regression
+license: MIT
+references:
+  - type: article
+    title: "AIDev: Studying AI Coding Agents on GitHub"
+    authors:
+      - family-names: Li
+        given-names: Hao
+      - family-names: Zhang
+        given-names: Haoxiang
+      - family-names: Hassan
+        given-names: Ahmed E.
+    year: 2025

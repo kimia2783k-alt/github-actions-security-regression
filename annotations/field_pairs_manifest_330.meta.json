@@ -1,0 +1,14 @@
+{
+  "n": 330,
+  "path": "annotations/field_pairs_manifest_330.csv",
+  "sha256": "d1c7339c5877ddf90ef6184f82cb4c68ec5cf936dadff7aafdcda8dfd1640f11",
+  "strata": {
+    "Claude_Code": 20,
+    "Copilot": 20,
+    "Cursor": 6,
+    "Devin": 4,
+    "OpenAI_Codex": 200,
+    "human": 80
+  },
+  "gold_positives": 46
+}

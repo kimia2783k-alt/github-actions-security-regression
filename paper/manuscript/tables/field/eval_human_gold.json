@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "n": 63,
+  "policy_validator": {
+    "tp": 34,
+    "fp": 5,
+    "tn": 22,
+    "fn": 2,
+    "precision": 0.8718,
+    "recall": 0.9444,
+    "f1": 0.9067,
+    "fpr": 0.1852,
+    "fnr": 0.0556
+  }
+}

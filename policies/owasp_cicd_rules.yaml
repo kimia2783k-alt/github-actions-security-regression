@@ -1,0 +1,268 @@
+version: "3.0.0"
+description: >
+  Declarative security-regression rules for GitHub Actions before/after diffs.
+  A finding is raised only when the after state is worse than the before state
+  under the formal predicates documented in policies/rule_formal_spec.md.
+  v3 adds R12–R15 (dangerous scopes, remote shell pipes, interactive triggers,
+  GITHUB_ENV injection) and tightens signal predicates for R07/R10.
+
+rules:
+  - id: R01
+    name: permissions_escalated_to_write_all
+    severity: high
+    owasp: [CICD-SEC-2, CICD-SEC-5]
+    enabled: true
+    description: Workflow permissions escalated to write-all or equivalent broad write.
+    signals_required: [permissions_raw, permissions_score]
+    formal_before: "not write-all(before) OR permissions_score(before) < 80"
+    formal_after: "write-all(after) OR permissions_score(after) >= 80"
+    regression_when: >
+      (write-all(after) AND NOT write-all(before))
+      OR (permissions_score(after) >= permissions_score(before) + 30
+          AND permissions_score(after) >= 80)
+    exceptions: []
+    examples: [data/sample/r01_permissions_write_all]
+
+  - id: R02
+    name: permissions_restriction_removed
+    severity: high
+    owasp: [CICD-SEC-5]
+    enabled: true
+    description: Explicit least-privilege permissions were removed or broadened.
+    signals_required: [permissions_raw]
+    formal_before: "has_explicit_restriction(before)"
+    formal_after: "NOT has_explicit_restriction(after)"
+    regression_when: "has_explicit_restriction(before) AND NOT has_explicit_restriction(after)"
+    exceptions: []
+    examples: [data/sample/r02_permissions_removed]
+
+  - id: R03
+    name: pull_request_target_introduced
+    severity: critical
+    owasp: [CICD-SEC-4]
+    enabled: true
+    description: Dangerous pull_request_target trigger introduced or expanded.
+    signals_required: [triggers]
+    formal_before: "pull_request_target NOT IN triggers(before)"
+    formal_after: "pull_request_target IN triggers(after)"
+    regression_when: >
+      pull_request_target IN triggers(after)
+      AND pull_request_target NOT IN triggers(before)
+    exceptions: []
+    examples: [data/sample/r03_pr_target]
+
+  - id: R04
+    name: privileged_pr_checkout
+    severity: critical
+    owasp: [CICD-SEC-4]
+    enabled: true
+    description: Checkout of PR head in a privileged trigger context.
+    signals_required: [privileged_checkout, triggers]
+    formal_before: "NOT privileged_checkout(before)"
+    formal_after: "privileged_checkout(after)"
+    regression_when: "privileged_checkout(after) AND NOT privileged_checkout(before)"
+    exceptions: []
+    examples: [data/sample/r03_pr_target]
+
+  - id: R05
+    name: action_unpinned_from_sha
+    severity: medium
+    owasp: [CICD-SEC-3]
+    enabled: true
+    description: >
+      Previously SHA-pinned action (@ref 40-hex) became floating tag/branch ref.
+      Comment-only "# <sha>" beside @v4 is not treated as a pin.
+    signals_required: [actions]
+    formal_before: "exists action A with key(owner,name) AND effectively_pinned(A) where pin means @ref is 40-hex"
+    formal_after: "same key present AND NOT effectively_pinned(A')"
+    regression_when: >
+      exists key K=(owner,name):
+        effectively_pinned(before[K]) AND NOT effectively_pinned(after[K])
+    exceptions: []
+    examples: [data/sample/r05_unpinned_action]
+    non_examples: [data/sample/r05_comment_pin_lost]
+
+  - id: R06
+    name: new_unpinned_third_party_action
+    severity: medium
+    owasp: [CICD-SEC-8]
+    enabled: true
+    description: New third-party action added without SHA pin.
+    signals_required: [actions]
+    formal_before: "action identity (owner,name,ref) not present in before"
+    formal_after: "new (owner,name,ref) with owner not trusted/local AND NOT effectively_pinned"
+    regression_when: >
+      exists action A in after:
+        (A.owner, A.name, A.ref) not in before_identities
+        AND A.owner not in trusted_action_owners
+        AND A.owner != local
+        AND NOT effectively_pinned(A)
+    exceptions: [trusted_action_owners, local_actions]
+    examples: [data/sample/r06_new_unpinned_third_party]
+
+  - id: R07
+    name: secret_exposure_pattern
+    severity: high
+    owasp: [CICD-SEC-6]
+    enabled: true
+    description: >
+      Secret value echoed/printed, toJSON(secrets), or env|grep dumps newly appear
+      in run scripts (count increases).
+    signals_required: [run_scripts, secret_echo_hits]
+    formal_before: "secret_echo_hits(before) = N_b"
+    formal_after: "secret_echo_hits(after) = N_a"
+    regression_when: "N_a > N_b"
+    exceptions: []
+    examples: [data/sample/r07_secret_echo]
+
+  - id: R08
+    name: security_job_or_step_removed
+    severity: high
+    owasp: [CICD-SEC-1]
+    enabled: true
+    description: Security scanning job/step removed (CodeQL, dependency-review, secret scan).
+    signals_required: [security_step_keys]
+    formal_before: "security_step_keys(before) = K_b"
+    formal_after: "security_step_keys(after) = K_a"
+    regression_when: "K_b - K_a is non-empty"
+    exceptions: []
+    examples: [data/sample/r08_removed_security_job]
+
+  - id: R09
+    name: workflow_run_introduced
+    severity: high
+    owasp: [CICD-SEC-4, CICD-SEC-7]
+    enabled: true
+    description: workflow_run trigger newly introduced (elevated risk pattern).
+    signals_required: [triggers]
+    formal_before: "workflow_run NOT IN triggers(before)"
+    formal_after: "workflow_run IN triggers(after)"
+    regression_when: >
+      workflow_run IN triggers(after)
+      AND workflow_run NOT IN triggers(before)
+    exceptions: []
+    examples: [data/sample/r09_workflow_run]
+
+  - id: R10
+    name: script_injection_risk_added
+    severity: high
+    owasp: [CICD-SEC-4]
+    enabled: true
+    description: >
+      Untrusted github.event / head_ref / inputs interpolation newly appears in run scripts.
+    signals_required: [run_scripts, injection_hits]
+    formal_before: "injection_hits(before) = N_b"
+    formal_after: "injection_hits(after) = N_a"
+    regression_when: "N_a > N_b"
+    exceptions: []
+    examples: [data/sample/r10_script_injection]
+
+  - id: R11
+    name: self_hosted_runner_added
+    severity: medium
+    owasp: [CICD-SEC-7]
+    enabled: true
+    description: self-hosted runner introduced where it was not present before.
+    signals_required: [has_self_hosted]
+    formal_before: "NOT has_self_hosted(before)"
+    formal_after: "has_self_hosted(after)"
+    regression_when: "has_self_hosted(after) AND NOT has_self_hosted(before)"
+    exceptions: []
+    examples: [data/sample/r11_self_hosted]
+
+  - id: R12
+    name: dangerous_permission_scope_escalated
+    severity: high
+    owasp: [CICD-SEC-2, CICD-SEC-5]
+    enabled: true
+    description: >
+      Fine-grained high-impact write scopes newly granted (contents, id-token,
+      actions, packages, …). Distinct from blanket write-all (R01).
+    signals_required: [write_scopes]
+    formal_before: "write_scopes(before) ∩ DANGEROUS = S_b"
+    formal_after: "write_scopes(after) ∩ DANGEROUS = S_a"
+    regression_when: >
+      (S_a - S_b) non-empty AND NOT (write-all newly introduced; covered by R01)
+    exceptions: [defer_to_R01_when_write_all_new]
+    examples: [data/sample/r12_contents_write]
+
+  - id: R13
+    name: remote_shell_pipe_added
+    severity: high
+    owasp: [CICD-SEC-3, CICD-SEC-8]
+    enabled: true
+    description: curl|bash / wget|sh / Invoke-Expression style remote shell pipes newly added.
+    signals_required: [run_scripts, pipe_shell_hits]
+    formal_before: "pipe_shell_hits(before) = N_b"
+    formal_after: "pipe_shell_hits(after) = N_a"
+    regression_when: "N_a > N_b"
+    exceptions: []
+    examples: [data/sample/r13_curl_bash]
+
+  - id: R14
+    name: dangerous_interactive_trigger_introduced
+    severity: high
+    owasp: [CICD-SEC-4]
+    enabled: true
+    description: >
+      Interactive/PPE-adjacent triggers newly introduced (issue_comment,
+      discussion_comment, pull_request_review_comment).
+    signals_required: [triggers]
+    formal_before: "dangerous_triggers ∩ triggers(before) = T_b"
+    formal_after: "dangerous_triggers ∩ triggers(after) = T_a"
+    regression_when: "(T_a - T_b) non-empty"
+    exceptions: []
+    examples: [data/sample/r14_issue_comment]
+
+  - id: R15
+    name: github_env_injection_risk_added
+    severity: high
+    owasp: [CICD-SEC-4]
+    enabled: true
+    description: Untrusted github context written toward GITHUB_ENV or GITHUB_PATH.
+    signals_required: [run_scripts, github_env_injection_hits]
+    formal_before: "github_env_injection_hits(before) = N_b"
+    formal_after: "github_env_injection_hits(after) = N_a"
+    regression_when: "N_a > N_b"
+    exceptions: []
+    examples: [data/sample/r15_github_env]
+
+dangerous_write_scopes:
+  - contents
+  - id-token
+  - actions
+  - packages
+  - security-events
+  - deployments
+  - environments
+  - attestations
+
+dangerous_triggers:
+  - issue_comment
+  - discussion_comment
+  - pull_request_review_comment
+
+trusted_action_owners:
+  - actions
+  - github
+  - aquasecurity
+  - ossf
+  - step-security
+  - docker
+  - aws-actions
+  - azure
+  - google-github-actions
+
+security_action_keywords:
+  - codeql
+  - dependency-review
+  - trivy
+  - tfsec
+  - checkov
+  - gitleaks
+  - secret-scan
+  - scorecard
+  - zizmor
+  - semgrep
+  - snyk
+  - osv-scanner

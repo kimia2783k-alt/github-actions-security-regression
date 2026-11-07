@@ -1,0 +1,10 @@
+name: Follow-on
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4

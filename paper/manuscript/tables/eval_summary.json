@@ -1,0 +1,65 @@
+{
+  "n": 15,
+  "regression_rate": 0.6666666666666666,
+  "policy_validator": {
+    "tp": 10,
+    "fp": 0,
+    "tn": 5,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0
+  },
+  "baseline": {
+    "tp": 10,
+    "fp": 5,
+    "tn": 0,
+    "fn": 0,
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8,
+    "fpr": 1.0,
+    "fnr": 0.0
+  },
+  "mean_seconds": 0.03399759333345476,
+  "rule_counts": {
+    "R01": 2,
+    "R02": 3,
+    "R03": 1,
+    "R04": 1,
+    "R05": 1,
+    "R06": 1,
+    "R07": 1,
+    "R08": 1,
+    "R10": 1,
+    "R11": 1
+  },
+  "per_agent_regression_rate": {
+    "claude_code": 1.0,
+    "codex": 1.0,
+    "copilot": 1.0,
+    "cursor": 1.0,
+    "devin": 1.0,
+    "human": 0.16666666666666666,
+    "jules": 1.0
+  },
+  "ai_vs_human": {
+    "ai_rate": 1.0,
+    "human_rate": 0.16666666666666666,
+    "table": [
+      [
+        9,
+        0
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "test": "fisher",
+    "odds_ratio": Infinity,
+    "p_value": 0.0019980019980019984
+  }
+}

@@ -1,0 +1,1652 @@
+{
+  "aidev-3079008543-554715679b0f82ae9091b99a401ab2825243125f-v0.7.0_validate_changed_files.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3189641151-b3fa304709df7801a10957fe9f22ce9b4cddc919-docker-mcp-publish.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3290561450-fa6440db2797029090b91c4cc4fb689a896037f3-cloud-runner-ci-pipeline.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4044366186-3cf40eb7c73bf83c217195ffe501750f3246ebab-test-powershell.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3389396728-76b898db1f117d119e74f53dda6be15e953311b2-build_module.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3315683651-7e63f41d843a07a8578eab4837384cdf8112f47d-ai-triage.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3274167831-8249a4f3549f4b0df4f42310e3dddaacee3185c1-developer_content_check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3274167831-8249a4f3549f4b0df4f42310e3dddaacee3185c1-windows_release_build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3274167831-2ed89a098af90ee6f524d9c107533ab681c8e599-debug_detector.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4021402504-07ea82edb4428f334fca588d131875957bceadb2-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:contents"
+  },
+  "aidev-3992739207-a5bbebf81e2d76dc7bcb98ec5a46b1045358065c-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3806936756-ca913902deb2b2f53bece0160c223b1fb0f66332-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4085605971-2f2a6b62f7f1db244aa0cf1f410e7e8d65f26dff-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3107296025-43a7af74cfb045817f8c13552f454554efa6fe60-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3989671114-695d21306719ee034ece70cff37fdff229805df2-integration.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3989849177-4793524fa63bc253480090d25f3551ba7ab63420-integration.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-contracts.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-mobile-bundle-analysis.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-mobile-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-mobile-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-mobile-e2e.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-npm-publish.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3324085497-cc47bb174be7508e26eb5fdbee4b85029b0f547d-qrcode-sdk-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3732466516-fcfecb37aaab8ffbf60cc9fabc669a96ad37e02c-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3148073995-1088b9e9e2bc7732f4e6f4ed26126a26d4d06165-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3148073995-4f0192c53d003876d86b84879e15a7f284ae1884-add_new_rust_to_matrix.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3148073995-4f0192c53d003876d86b84879e15a7f284ae1884-update_snapshots.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:actions-rust-lang/setup-rust-toolchain@v1;new:Swatinem/rust-cache@v2;scope:contents"
+  },
+  "aidev-3537216850-6b8b54e8411e9b7a8646c6326554c83960d41c4e-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3074482141-c4e38a2a7df4a66090fcd1dd88aae48dd070705b-claude.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12|R14",
+    "notes": "new:anthropics/claude-code-action@beta;scope:id-token;issue_comment"
+  },
+  "aidev-3074482141-9673dc14d8f89c9b2385fc7ae94a37640cb1e13b-glob-sources.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:stefanzweifel/git-auto-commit-action@v5;scope:contents"
+  },
+  "aidev-3205832180-b3764423bfe8f9ec84fd8cfe86dcaf3fed5e0977-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3437974075-322cff323c1eb2a51ef23144e8b2a26a9990a2ac-docker.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3173202723-01c861d4a6ca4ccd7f87f591a92afbec42c8b31a-platform-frontend-ci.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:jlumbroso/free-disk-space@main"
+  },
+  "aidev-3173202723-41df2430125e3d3603f04a0a695088392853000c-platform-backend-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-autotriage-backlog.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-autotriage-issues.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-autotriage-prs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-build-test-mudblazor.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-deploy-mudblazor-nightly.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-deploy-mudblazor-nuget.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4154708677-0bc090d300ec0fc535aef3dcb72e2b34e7e9e074-deploy-trymudblazor.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4107691389-7116345d04b1c2181120c51bf1ec461b35d5d1da-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4107691389-3ed190279f0e50d0dee79f148173713b3dbf96f4-build-pr.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4107691389-70354bc29e693a730747e40649339885a05941d7-trivy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4107691389-3d50024e8f970d428341b8c17af095cbc7a69da9-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4163135826-4acad358bba633b0e36bcd81fcf5ceab188fa7dc-build_app_debug_manual.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:subosito/flutter-action@v2"
+  },
+  "aidev-3369315596-45a78992494997760f18224c6fdb7fbc405de47b-test.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:codecov/test-results-action@v1"
+  },
+  "aidev-3894266206-73ca89c9f836e1448e53fd26a323082595914516-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4020352232-b9d6b9aee6c08a75379a898dfbd032f6f3ca17ef-release-readiness.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4020352232-b9d6b9aee6c08a75379a898dfbd032f6f3ca17ef-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4134332914-fc79b7bf5aef0c0f378dc3dff33e9da7eb0a0c71-security-utils-cert-validity.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4078960885-2af7760229c3e133ab3497165b9819f4f84adfbb-pkgdown.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3987954096-3cb8a8f86715cc03c376ac67c3771311b124bedb-e2e-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3630921902-c8f0307132a736bf43417a73514c47b433eeaacc-pr-main.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R03",
+    "notes": "pr_target"
+  },
+  "aidev-3250897874-4d9201afb40c843402f4bf6a73a63155a9dea2a1-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-auto-response.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-codeql.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-docker-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-install-smoke.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-labeler.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-openclaw-npm-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:id-token"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-sandbox-common-smoke.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-stale.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4074830790-5645ffcaaecfa5df91c0d022ae7c756cf5e5ea74-workflow-sanity.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4095197106-2574bd4859bd08131e9426a97a342ba0c39cfacb-release-dmg.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3180533478-c334264e380230244365159e2ff26da05a02f668-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4014480574-bd35d091d4792898d25e9cb131c38d763486339f-docs-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3630992943-9a2ec5aea591421bc0e9cb32df9146d5faa6a6b4-tests-nightly.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3630992943-9a2ec5aea591421bc0e9cb32df9146d5faa6a6b4-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3245491605-9859511538782fba9062c868acdce2830ede7bb5-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4076019846-01caa37b4120991c0ce6b7a9a1a26ab63ac51f28-docker-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4076019846-c044ada9b7d8a217b0e22b443198ac99723d37c2-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4076019846-56608d83e5e53f3120e4a94517fcc81a43efaad1-openclaw-npm-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3997635798-1b70881a5ad6d6d1c0d9e233a563dc14c728a1c1-winget-fork-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3997635798-4a1fac9745d7657a89b03bc5e05ec570b660da48-rust-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4116091058-6ae1582aec17a39b9d30fe1d589ff422c214c70a-ci.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R15",
+    "notes": "github_env"
+  },
+  "aidev-3260096288-0aa54833fc5583c0a8fc6e424da912a3d92f12d5-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4036411934-c2a38580d5c5322d38d4728d425a46b3694ef68b-bump-personal-server-after-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4036411934-5b758d1af47ccb63e3e5e7e6887e8f8967b713fc-docs-screenshots.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3236676568-7345a668ec8739adef66ecbf086794ed957c9932-docs.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R05",
+    "notes": "unpin"
+  },
+  "aidev-3922398588-e26d8a4b87f8f4f2b1927d00fcc1d38fab2f3fe2-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3093698030-04fe8dc0bf980ab0ab4306c280255fb06e9aed2e-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3966487299-f6861d366d296fe4312ceb4bfc64bd0d632dc740-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4136703321-a0f61b39d28d93b7bc20b1dabe7ba027f03add8d-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4090737502-39efdb38bffc6cac8cadeca4a6f63d6f9c068940-tests.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:pnpm/action-setup@v3;new:pnpm/action-setup@v3"
+  },
+  "aidev-4090737502-de4097e867182c36158ef52a692658715f91a531-benchmark-community-world.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4090737502-de4097e867182c36158ef52a692658715f91a531-benchmarks.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3145226921-5669d0e7f70ede048faf773f98a192f8d87355e3-docker-publish.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3471043394-1198274083b7002aa0047fe4b4580e3f13f9e1dc-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-github-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:softprops/action-gh-release@v2;scope:contents"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:contents"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-snapshot.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3530137270-e972b210c577f46199eddd2e5c50c5b984768f64-validate.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3310989443-506aa3b39820475aee08bbaf8583dbfd51b390a2-lint.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3673145597-ca6de80bb251d3bad6fca38db5f21d3f4df8aeb5-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3673145597-083bf88e04b09124f3d546359496100c8fca76ac-ci-health.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3985709913-a7d0b1211085810fc5c013c50358de62535a0ab7-create-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:contents"
+  },
+  "aidev-3985709913-a7d0b1211085810fc5c013c50358de62535a0ab7-release-drafter.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4094920926-7096eadbbbd3c82597a149315c062eb0a57b8e5c-docker.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3537165690-0967158e7d7ce94d127da9f575873b9ba2f990b9-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3243325226-124715d6290565c2a7e88b461989c69c418a6de1-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4040647158-8d008b3263ce920df7a1e7fbf0cea45b1841ddce-nodejs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3277634513-67901682fab9e6a60e96f0677166f08929d7c99c-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4070184493-f21fe7c504279ddd610b90f3e8b86f9bca44abd1-check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4070184493-f21fe7c504279ddd610b90f3e8b86f9bca44abd1-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3098493900-c8d1bed7902a983d6126f0ce13eff3455f5b8619-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4123369821-b76853e69b57e64772818cd5240c0e367a2f7891-publish-python.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:astral-sh/setup-uv@v7;new:pypa/gh-action-pypi-publish@release/v1;scope:id-token"
+  },
+  "aidev-4123369821-b76853e69b57e64772818cd5240c0e367a2f7891-publish-ts.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:id-token"
+  },
+  "aidev-3353297672-2253e37e38c45800bbd6a76d77f4ae4c1e1a9dc6-enforce-labels.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3353297672-0e07a5873263031314c6b55784d3181f3bab0bd2-ci.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:codecov/codecov-action@v4;scope:id-token"
+  },
+  "aidev-3353297672-fd8b425458c0e9e703d50a04fd12084a55b14901-integration-test.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:dorny/paths-filter@v2"
+  },
+  "aidev-3353297672-fd8b425458c0e9e703d50a04fd12084a55b14901-x402.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3353297672-f230fc364f021d034ac3e0187b83ab4b83b0b5e1-mock_balances_build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3353297672-f230fc364f021d034ac3e0187b83ab4b83b0b5e1-pr-to-slack-codex.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3353297672-7797f541e05ed211eca2fe1e8ff29ad5bcbddd42-golangci-lint.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:golangci/golangci-lint-action@v3"
+  },
+  "aidev-3353297672-7797f541e05ed211eca2fe1e8ff29ad5bcbddd42-x402-settlement-check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3353297672-daa38cf4aaa4e3a66ea749763ad73b9e99a534f8-abandonedlion-deploy.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R14|R15",
+    "notes": "new:foundry-rs/foundry-toolchain@v1;issue_comment;github_env"
+  },
+  "aidev-3436325432-7484877dbbdf185960820086b920f55e09404ad0-release-updates.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4129475678-3c58d8f173dcd03d98e49925bf5bede5588b11e5-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4163400103-45f2d03911da7f821d92e10e7127e67f2745edba-translate-i18n-claude.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3364889710-299c5cc48db73c074d9e70e10372439aa6630b55-publish-image.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-ac807b79abd952ba556eb8bf588c658c7c7bb970-build-container-images.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-ac807b79abd952ba556eb8bf588c658c7c7bb970-e2e-template.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-ac807b79abd952ba556eb8bf588c658c7c7bb970-reis-stresstest.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-75e4fd280f2521265aa8488ea9a77799152ecacc-backend.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-75e4fd280f2521265aa8488ea9a77799152ecacc-build-dev-helper-container-images.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-75e4fd280f2521265aa8488ea9a77799152ecacc-release-publish-chart-and-container-images.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969248802-ef94a89113bcd5ad0e99eb46ec2badc197b5d22d-dependabot.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4084563116-9050fe2e024b9c052db99fab8286eff9e70a7146-e2e.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4084563116-9050fe2e024b9c052db99fab8286eff9e70a7146-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4084563116-2b5b6467e6585053c4fc6dacda757587ca39d596-code_style.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3421893260-278df129618aa9cc93dc3e94fcbe5e62d8f6619f-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3103367606-0f1c4884fa7373df07283096efa82519c9ecfc73-auto-approve-layerzero-bot.yaml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:tj-actions/changed-files@v44;new:hmarr/auto-approve-action@v4"
+  },
+  "aidev-3103367606-0f1c4884fa7373df07283096efa82519c9ecfc73-reusable-test.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4118855135-0af2bcf7eed139433f1f1983ef275b3a3848f618-release-macos-universal.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:contents"
+  },
+  "aidev-3927017598-b506d99b3b37641c24686cc53fa9956d599ea154-coverage.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3927017598-b506d99b3b37641c24686cc53fa9956d599ea154-lint.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3927017598-b506d99b3b37641c24686cc53fa9956d599ea154-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3927017598-b506d99b3b37641c24686cc53fa9956d599ea154-workflow.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3306313537-83fed701cfd4e3896945442317fba56bc890464e-sdk-alpha-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4008559686-0f1318ca5f851b98d73018179cbc33d792d016d0-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4008559686-d16a7cad55cdc4af012d26c1c9e21799895b05d4-precompiled-candidate-evaluation.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:ruby/setup-ruby@v1;new:dtolnay/rust-toolchain@stable;new:KyleMayes/install-llvm-action@v2"
+  },
+  "aidev-4008559686-bb3f997742c83c8067fd4b151637d18f545a4daa-release-failure-alert.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R09",
+    "notes": "workflow_run"
+  },
+  "aidev-4008140825-60ed5739ca081e5506880d4032526aaaaadb558a-docker-images.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4034484205-7fc7cb32d7920f8fd540808dfa6e74c4646b3993-private-proof-ci.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R13",
+    "notes": "new:dtolnay/rust-toolchain@stable;curl_bash"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-build-and-store-wasm.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-build-apps.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-build-wasm.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-cargo-test.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R05",
+    "notes": "unpin"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-e2e-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-kcl-language-server.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-kcl-python-bindings.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030211844-c91375ed9ad9e6fb6bf0b895da0793dcad1e859a-static-analysis.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3351776454-6200765612d38cf94dfde16bc2f7574d89a5a708-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4054288013-d79af41dedcd419d28899bf1dfc31e9e79748b6e-code-checks.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3973038603-e1edd4ed3f48a33594b49424fa0d945b0c7acdc8-codex-issue-trigger.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3973038603-e1edd4ed3f48a33594b49424fa0d945b0c7acdc8-lighthouse-performance.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:peter-evans/create-pull-request@v7"
+  },
+  "aidev-3973038603-e1edd4ed3f48a33594b49424fa0d945b0c7acdc8-lighthouse.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:peter-evans/create-pull-request@v7"
+  },
+  "aidev-3973038603-e1edd4ed3f48a33594b49424fa0d945b0c7acdc8-tests.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:peter-evans/create-pull-request@v7"
+  },
+  "aidev-3987572570-735a222908dfbbc043681c469c5ada4208e986f7-ci-run.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3987572570-735a222908dfbbc043681c469c5ada4208e986f7-pub-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R13",
+    "notes": "curl_bash"
+  },
+  "aidev-4148268124-0b3eab961ea14011a7f826a166d7c44a4e85851b-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3971609835-fdd577a38639d89a06559a63b3206925db30f19c-update-flow-tests.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:pnpm/action-setup@v4"
+  },
+  "aidev-3085153537-7f462a28e996f60f1332d8904bccf66ea18f9754-main.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3085153537-1a8f9f1522dce3a6624bbca90f225f95e740d04a-npm-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3085153537-1a8f9f1522dce3a6624bbca90f225f95e740d04a-tusk-test-runner-app-vitest-unit-tests.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:Use-Tusk/test-runner@v1"
+  },
+  "aidev-3485189404-8d01f8a451528e8a08d490acf94dcbfd905f54b0-frontend.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3485189404-8d01f8a451528e8a08d490acf94dcbfd905f54b0-test_build_push.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:packages"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-api.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-linkcheck.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-macos.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-migrations.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-mypy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-pre-commit.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-pylint.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-rundev.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-schema-update.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-scorecards.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-setup.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-unicodechars.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-uv-upgrade.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4168785074-032dcc90b37de438607049506bcc5ecb6821da8b-yarn-update.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4124901376-3b733d914d777685acee80dc626de699e44e34da-release.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R15",
+    "notes": "github_env"
+  },
+  "aidev-3526335381-4cf51a6eade15401b4adfd444d12d3a3ac62aba4-gotidy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3526335381-4cf51a6eade15401b4adfd444d12d3a3ac62aba4-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4070832797-48f68a788e87420872f98e831e005cbf43d6fb0b-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4070832797-48f68a788e87420872f98e831e005cbf43d6fb0b-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3967444983-1ae8fbdc3082307e70b72f1b44515d278a081dfe-levanter-tests.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4029854609-494713c5b9dc873f6a8028d0f297d79581e00d7b-main.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3664350912-050cbd62973346b8f0853de799f8f02e66f733f9-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3437146476-ca89fecd423db3a2e03abd39fcc0556410f6cf63-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3437146476-ca89fecd423db3a2e03abd39fcc0556410f6cf63-sync-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3082521324-c500699b109fe064b2a0644706a85c6433663b0a-v0.7.0_validate_changed_files.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4105790337-df6d95782bbea72af3f13cb370a2f25c3640ff72-release-docker.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3969949090-0d919a9637c447b6f4b872c115ef108e9598bea4-docs.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:id-token"
+  },
+  "aidev-4064569265-pr2908-all-ci-unsafe.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3590674711-pr281-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3886474638-pr2178-turbo.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3694832805-pr156-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3823451422-pr21-release-to-discord.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3823451422-pr21-release-to-x.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030899970-pr707-hotfix-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4030899970-pr707-semver-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3644964861-pr181-python-app.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-api-surface.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-benchmark.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-code-quality.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-docker-integration.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-docs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-label-sync.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-lint.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-proto.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3958309960-pr2108-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4037724222-pr620-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4037724222-pr620-gitleaks.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:gitleaks/gitleaks-action@v2"
+  },
+  "aidev-4148154473-pr23190-agent-performance-analyzer.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-agent-persona-explorer.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-agentic-observability-kit.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-archie.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-artifacts-summary.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-audit-workflows.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-auto-triage-issues.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-blog-auditor.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-brave.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-breaking-change-checker.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-changeset.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-ci-coach.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-ci-doctor.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-claude-code-user-docs-review.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-cli-consistency-checker.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-cli-version-checker.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-cloclo.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-code-scanning-fixer.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-code-simplifier.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4148154473-pr23190-commit-changes-analyzer.lock.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3501169512-pr74-ci.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:codecov/codecov-action@v5"
+  },
+  "aidev-3501169512-pr74-lighthouse.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3501169512-pr74-security.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:socketdev/socket-security-action@v1"
+  },
+  "aidev-3501169512-pr74-seo-validation.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4099623739-pr1142-pr-checks.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-4099623739-pr1142-refresh-installs-badge.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06|R12",
+    "notes": "new:peter-evans/create-pull-request@v7;scope:actions"
+  },
+  "aidev-3640158116-pr10668-seed-pr-comment.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3665067479-pr70219-publish-connectors-prerelease-command.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3339129064-pr1225-sync-to-oss.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "aidev-3432142773-pr3524-agent-deep-modeling.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-AgentOps-AI_agentops-b5831ead0c45-examples-integration-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-AgentOps-AI_agentops-77e39301389f-examples-integration-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ESPresense_ESPresense-companion-c08488ccefb8-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ESPresense_ESPresense-companion-0c51b918f4a1-release-dispatch.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-EvotecIT_CleanupMonster-72056809924e-test-powershell.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ExtractPDF4J_ExtractPDF4J-f08b2b2da8cd-docs-site.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R12",
+    "notes": "scope:id-token"
+  },
+  "human-ExtractPDF4J_ExtractPDF4J-554349454360-javadocs.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-JuliaPy_PythonCall.jl-992758debc52-register-pypi.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-JuliaPy_PythonCall.jl-992758debc52-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Kiln-AI_Kiln-16298573c16d-check_release_downloads.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Kiln-AI_Kiln-3002f93386f0-debug_detector.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-KittyCAD_modeling-app-5599f3f70d16-unit-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-KittyCAD_modeling-app-56c6f7c43d2b-e2e-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-LayerZero-Labs_devtools-abc569cf513d-auto-approve-layerzero-bot.yaml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:tj-actions/changed-files@v46.0.1"
+  },
+  "human-LayerZero-Labs_devtools-abc569cf513d-on-main.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-MontrealAI_AGI-Alpha-Agent-v0-33b19714e121-agent-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-MontrealAI_AGI-Alpha-Agent-v0-fa34900431fe-successor-capability.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-MudBlazor_MudBlazor-ef2caf999e8a-ai-code-review.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-MudBlazor_MudBlazor-87b1c1bb851f-autotriage-backlog.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:danielchalmers/AutoTriage@v5"
+  },
+  "human-OVVO-Financial_NNS-a7323a17e59b-downstream-sync-dispatch.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-OVVO-Financial_NNS-ead887ea5149-pkgdown.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Priivacy-ai_spec-kitty-3f6ef61fc327-ci-nightly.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Priivacy-ai_spec-kitty-3f6ef61fc327-ci-quality.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Significant-Gravitas_AutoGPT-c52ce5d6cff7-copilot-setup-steps.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Significant-Gravitas_AutoGPT-c52ce5d6cff7-platform-fullstack-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-TracecatHQ_tracecat-9ea3fa21798e-test-python.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-TracecatHQ_tracecat-c8e2d8167891-test-python.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-WeblateOrg_weblate-3c9ecae91357-issue-commented.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-WeblateOrg_weblate-e67a993e97ae-rundev.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Yuan-lab-LLM_ClawManager-4251014672d4-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-Yuan-lab-LLM_ClawManager-378b58b1d5d2-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-al1abb_invoify-d3b9df88a6fc-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-al1abb_invoify-537cee53bb0c-webpack.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-alexbelgium_hassio-addons-e7f8c37695b2-lint.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-alexbelgium_hassio-addons-020d0ca897a3-on_issues_ai_triage.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-antelle_argon2-browser-f580e88a47af-build.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-antelle_argon2-browser-8ed697efe62c-build.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-baz-scm_awesome-reviewers-3cec9615fe02-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-baz-scm_awesome-reviewers-31637e7a7a3c-deploy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-cagnulein_qdomyos-zwift-cbe19ab594c7-update-translations.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R15",
+    "notes": "github_env"
+  },
+  "human-cagnulein_qdomyos-zwift-f039d94f6af5-settings-fields.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-christopherkarani_Swarm-5aabfba68569-swift.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-christopherkarani_Swarm-3ba5fbb49891-swift.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-cjpais_Handy-93c9ee05efe2-code-quality.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-cjpais_Handy-5197faf0e6fe-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-clojurewasm_zwasm-6d6307a04bf0-main_failure.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-clojurewasm_zwasm-65a72f015b98-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-codecentric_c4-genai-suite-52498f00a6d2-e2e.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-codecentric_c4-genai-suite-fa256ad455b3-eval.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-dailydotdev_apps-012efccc0540-e2e-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-dailydotdev_apps-2f54557c3a03-release-extension.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-darksworm_argonaut-5a1eca5b4b4c-aur-git-publish.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-darksworm_argonaut-5a1eca5b4b4c-goreleaser.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ealdent_lda-ruby-89ba415378c4-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ealdent_lda-ruby-e93b407902b1-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ecomfe_tempad-dev-3f2633386699-build.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-ecomfe_tempad-dev-3f2633386699-publish-mcp.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-everettjf_liney-3cd710feef02-ghostty-vendor.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-everettjf_liney-dddb468dacb8-macos-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-game-ci_unity-builder-eb1b9fba120c-auto-retry-known-flakes.yml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R09|R12",
+    "notes": "workflow_run;scope:actions"
+  },
+  "human-game-ci_unity-builder-eb1b9fba120c-build-tests-mac.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-generalaction_emdash-ddd66c143bd1-workspace-server-package-check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-generalaction_emdash-8d4b6b414d18-code-consistency-check.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-gofiber_swagger-4cf51a6eade1-gotidy.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-gofiber_swagger-4cf51a6eade1-test.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-greyhaven-ai_autocontext-7c8a656d7c56-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-greyhaven-ai_autocontext-e6d9af26b679-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-html2rss_html2rss-web-0350d5363219-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-html2rss_html2rss-web-4e3dd24d5296-ci.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-hughjonesd_huxtable-c9a056aa5d8b-R-CMD-check.yaml": {
+    "gold_has_regression": 1,
+    "gold_rule_ids": "R06",
+    "notes": "new:r-lib/actions/check-r-package@v2"
+  },
+  "human-hughjonesd_huxtable-6ff4d17e5456-lint.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-infer-actively_pymdp-ff1eb8dd83c6-manual-branch-nightly.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-infer-actively_pymdp-ff1eb8dd83c6-nightly-tests.yaml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-jhlee0409_claude-code-history-viewer-b4ab413d35d5-server-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-jhlee0409_claude-code-history-viewer-c099980f5595-frontend-tests.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-kevinelliott_agentpipe-5b52255d9380-release.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-kevinelliott_agentpipe-7e4c6f337295-build-pr.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-l5yth_potato-mesh-1f90baf9997b-docker.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-l5yth_potato-mesh-0be4d84bf28f-python.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  },
+  "human-laitco_tailscale-healthcheck-bd5799e22f35-validate-pr_commits.yml": {
+    "gold_has_regression": 0,
+    "gold_rule_ids": "",
+    "notes": "neg"
+  }
+}
