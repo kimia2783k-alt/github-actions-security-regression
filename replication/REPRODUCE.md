@@ -80,4 +80,4 @@ python scripts/guide_fa_to_docx.py
 | Gold delta | `paper/manuscript/tables/field/gold_v_delta.md` |
 | English MS | `paper/manuscript/main.md` |
 | Publish to GitHub | `replication/PUBLISH.md` + `replication/GITHUB_STEPS_FA.md` |
-| Public URL | https://github.com/kimia2783k-alt/github-actions-security-regression (`06d70c8`) |
+| Public URL | https://github.com/kimia2783k-alt/github-actions-security-regression (tag `pin-semantics-v0.5`) |

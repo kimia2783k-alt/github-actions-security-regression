@@ -14,5 +14,5 @@
   "zizmor_on_path": true,
   "manifest_sha256": "d1c7339c5877ddf90ef6184f82cb4c68ec5cf936dadff7aafdcda8dfd1640f11",
   "public_url": "https://github.com/kimia2783k-alt/github-actions-security-regression",
-  "release_commit": "06d70c809d08203b4a0b8478844219d39c0a5306"
+  "release_tag": "pin-semantics-v0.5"
 }

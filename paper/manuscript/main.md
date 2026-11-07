@@ -193,7 +193,7 @@ The authors thank the maintainers of the AIDev dataset and the open-source CI se
 
 **AI writing disclosure (JAIAI):** In order to correct and improve the academic writing of our paper, we have used the language model Cursor Agent (Composer).
 
-**Data and code availability:** Artifacts include `src/`, `policies/owasp_cicd_rules.yaml` (v3), OWASP map (`policies/rule_owasp_map.md`), `data/sample/`, field gold `annotations/labels_aidev.csv`, full pair index `annotations/field_pairs_manifest_330.csv`, sampling protocol `replication/SAMPLING_PROTOCOL.md`, host HW/SW freeze `replication/ENV_FREEZE.md`, human pack `annotations/human_round/` (single-annotator labels), evaluation tables under `paper/manuscript/tables/` (including `confusion_matrices.md`), `replication/REPRODUCE.md`, and publish steps in `replication/PUBLISH.md`. Result version: **pin-semantics-v0.5**. Public repository URL: https://github.com/kimia2783k-alt/github-actions-security-regression. Release/commit: `06d70c809d08203b4a0b8478844219d39c0a5306`.
+**Data and code availability:** Artifacts include `src/`, `policies/owasp_cicd_rules.yaml` (v3), OWASP map (`policies/rule_owasp_map.md`), `data/sample/`, field gold `annotations/labels_aidev.csv`, full pair index `annotations/field_pairs_manifest_330.csv`, sampling protocol `replication/SAMPLING_PROTOCOL.md`, host HW/SW freeze `replication/ENV_FREEZE.md`, human pack `annotations/human_round/` (single-annotator labels), evaluation tables under `paper/manuscript/tables/` (including `confusion_matrices.md`), `replication/REPRODUCE.md`, and publish steps in `replication/PUBLISH.md`. Result version: **pin-semantics-v0.5**. Public repository URL: https://github.com/kimia2783k-alt/github-actions-security-regression. Release tag: `pin-semantics-v0.5`.
 
 ---
 
@@ -202,7 +202,7 @@ The authors thank the maintainers of the AIDev dataset and the open-source CI se
 This checklist is an editorial aid and is not part of the scientific article. Complete each item, then remove this appendix before submitting the manuscript.
 
 - [ ] Complete author names, institutional affiliations, corresponding-author details, and ORCID identifiers.
-- [x] Insert the exact public URL and release/commit hash of the research implementation (https://github.com/kimia2783k-alt/github-actions-security-regression / `06d70c809d08203b4a0b8478844219d39c0a5306`).
+- [x] Insert the exact public URL and release tag of the research implementation (https://github.com/kimia2783k-alt/github-actions-security-regression / `pin-semantics-v0.5`).
 - [x] Confirm the field-sampling dates, retrieval process, repository matching, deduplication, and workflow-pair manifest (`replication/SAMPLING_PROTOCOL.md`; `annotations/field_pairs_manifest_330.csv`).
 - [x] Copy the exact R01–R15 OWASP mapping from `policies/rule_owasp_map.md` (Table A in §4.1).
 - [x] Audit whether comment-only SHA values are treated as actual pins; a YAML comment does not change the GitHub-resolved Action reference (`docs/pin_semantics_audit.md`; `effectively_pinned` = `@ref` 40-hex only).

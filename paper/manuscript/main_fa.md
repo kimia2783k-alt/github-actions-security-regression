@@ -173,7 +173,7 @@
 
 **مشارکت نویسندگان (CRediT):** [تکمیل شود].
 
-**دسترسی به داده و کد:** شامل `src/`، سیاست v3، نگاشت OWASP (`policies/rule_owasp_map.md`)، برچسب میدان (`annotations/labels_aidev.csv`)، فهرست کامل ۳۳۰ جفت (`annotations/field_pairs_manifest_330.csv`)، پروتکل نمونه‌گیری (`replication/SAMPLING_PROTOCOL.md`)، فریز سخت‌افزار/نرم‌افزار (`replication/ENV_FREEZE.md`)، زیرنمونهٔ انسانی تک‌ارزیاب (`annotations/human_round/`)، جداول ارزیابی از جمله ماتریس درهم‌ریختگی، `replication/REPRODUCE.md` و راهنمای انتشار `replication/PUBLISH.md` / `replication/GITHUB_STEPS_FA.md`. نسخهٔ نتایج: **pin-semantics-v0.5**. نشانی عمومی مخزن: https://github.com/kimia2783k-alt/github-actions-security-regression. هش انتشار/کامیت: `06d70c809d08203b4a0b8478844219d39c0a5306`.
+**دسترسی به داده و کد:** شامل `src/`، سیاست v3، نگاشت OWASP (`policies/rule_owasp_map.md`)، برچسب میدان (`annotations/labels_aidev.csv`)، فهرست کامل ۳۳۰ جفت (`annotations/field_pairs_manifest_330.csv`)، پروتکل نمونه‌گیری (`replication/SAMPLING_PROTOCOL.md`)، فریز سخت‌افزار/نرم‌افزار (`replication/ENV_FREEZE.md`)، زیرنمونهٔ انسانی تک‌ارزیاب (`annotations/human_round/`)، جداول ارزیابی از جمله ماتریس درهم‌ریختگی، `replication/REPRODUCE.md` و راهنمای انتشار `replication/PUBLISH.md` / `replication/GITHUB_STEPS_FA.md`. نسخهٔ نتایج: **pin-semantics-v0.5**. نشانی عمومی مخزن: https://github.com/kimia2783k-alt/github-actions-security-regression. برچسب انتشار: `pin-semantics-v0.5`.
 
 ---
 
@@ -182,7 +182,7 @@
 این پیوست کمک ویرایشی است و جزء مقالهٔ علمی نیست. پس از تکمیل هر مورد، پیش از ارسال این پیوست را حذف کنید.
 
 - [ ] تکمیل نام نویسندگان، وابستگی سازمانی، نویسندهٔ مسئول و ORCID.
-- [x] درج نشانی عمومی دقیق و هش انتشار/کامیت (https://github.com/kimia2783k-alt/github-actions-security-regression / `06d70c809d08203b4a0b8478844219d39c0a5306`).
+- [x] درج نشانی عمومی دقیق و برچسب انتشار (https://github.com/kimia2783k-alt/github-actions-security-regression / `pin-semantics-v0.5`).
 - [x] تأیید تاریخ نمونه‌گیری میدان، فرایند بازیابی، تطبیق مخزن، حذف تکراری و manifest جفت‌ها.
 - [x] کپی نگاشت دقیق R01–R15 به OWASP از `policies/rule_owasp_map.md`.
 - [x] ممیزی پین: SHA صرفاً در comment پین مؤثر نیست.
