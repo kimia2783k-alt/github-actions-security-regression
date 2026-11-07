@@ -6,7 +6,7 @@ Canonical copy lives in `paper/manuscript/main.md` (Appendix A) and `main_fa.md`
 | Item | Status |
 |------|--------|
 | Authors / affiliations / ORCID | Open |
-| Public URL + commit hash | Open (`[URL_TO_BE_FILLED]`, `[COMMIT_TO_BE_FILLED]`) |
+| Public URL + commit hash | Done — https://github.com/kimia2783k-alt/github-actions-security-regression (`06d70c8…`) |
 | Sampling + manifest | Done |
 | OWASP R01–R15 table in MS | Done |
 | Comment-only SHA pin audit | Done |
