@@ -1,9 +1,0 @@
-Security_Regressions_GHA_AI_Agents_Manuscript.docx
-  mtime=2026-11-05 11:15:54 size=106441
-  checks={'out of scope': True, 'rule_counts': True, 'zizmor_cli_available': True, 'ارزیاب دوم': False, 'حدس': False}
-Security_Regressions_GHA_AI_Agents_Manuscript_FA.docx
-  mtime=2026-11-05 11:15:59 size=44860
-  checks={'out of scope': False, 'rule_counts': True, 'zizmor_cli_available': True, 'ارزیاب دوم': True, 'حدس': True}
-Project_Guide_EN_0_to_100.docx
-  mtime=2026-11-05 11:05:54 size=84794
-  checks={'out of scope': True, 'rule_counts': True, 'zizmor_cli_available': True, 'ارزیاب دوم': False, 'حدس': False}

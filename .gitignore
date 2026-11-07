@@ -1,4 +1,4 @@
-# Secrets — never commit
+# Secrets
 .env
 .env.local
 *.pem
@@ -20,7 +20,7 @@ build/
 .coverage
 htmlcov/
 
-# Large / regenerable data (labels + sample fixtures are enough to report metrics)
+# Large regenerable data
 data/raw/*
 !data/raw/.gitkeep
 data/interim/*
@@ -31,12 +31,46 @@ data/processed/*
 *.parquet
 !data/sample/**
 
-# Editor
+# Editor / OS
 .idea/
 .vscode/
-paper/progress.md.bak
-
-# Local agent / OS junk
 Thumbs.db
 desktop.ini
 *.log
+paper/progress.md.bak
+
+# Keep GitHub lean: local paper drafts & Word/PDF stay off the public repo
+paper/manuscript/*.docx
+paper/manuscript/*.pdf
+paper/manuscript/Project_Guide_EN_0_to_100.md
+paper/manuscript/guide_explain_fa.md
+paper/manuscript/supervisor_briefing_fa.md
+paper/manuscript/abstract_fa.md
+paper/manuscript/case_studies.md
+paper/manuscript/cover_letter.md
+paper/manuscript/milestone_note_fa.md
+paper/manuscript/suggested_reviewers.md
+paper/manuscript/references.bib
+paper/literature/
+paper/jaiai/
+paper/progress.md
+paper/proposal_fa.md
+paper/study_protocol.md
+notebooks/
+enter.ps1
+
+# Local-only helper scripts (not needed to reproduce metrics)
+scripts/*_to_docx.py
+scripts/build_project_guide_en.py
+scripts/briefing_fa_to_docx.py
+scripts/qa_secretariat_fa.py
+scripts/_sync_guide_metrics.py
+scripts/_freeze_manifest_env.py
+
+# Temp QA / unused annotation scaffolding
+paper/manuscript/tables/field/qa_*
+annotations/human_round/annotator_B.csv
+annotations/labels_aidev_merged.csv
+
+replication/PUBLISH.md
+replication/GITHUB_STEPS_FA.md

@@ -1,59 +1,39 @@
-# Security Regressions in AI-Agent-Modified GitHub Actions
+# GitHub Actions Security Regression
 
-Policy-based before/after validator and empirical pilot for detecting **security regressions** in GitHub Actions workflow diffs (including AI-agent-related edits).
+Before/after policy checks for security regressions in GitHub Actions workflows (OWASP-mapped rules R01–R15).
 
-**Result freeze:** `pin-semantics-v0.5`  
-**Policy:** `policies/owasp_cicd_rules.yaml` v3.0.0  
-**Effective Action pin:** `@ref` must be a 40-hex commit SHA (YAML `# <sha>` comments are **not** pins).
+**Public release:** [`pin-semantics-v0.5`](https://github.com/kimia2783k-alt/github-actions-security-regression/releases/tag/pin-semantics-v0.5)  
+**Repo:** https://github.com/kimia2783k-alt/github-actions-security-regression
 
-## Quick start
+## Install
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 $env:PYTHONPATH = "src"
+```
 
-# Unit tests (no network)
+## Reproduce
+
+```powershell
 python -m pytest tests -q
-
-# Controlled evaluation (N=15)
 python -m evaluate.run_eval --labels annotations/labels_sample.csv --out paper/manuscript/tables/controlled
-
-# Field evaluation (N=330; needs materialized pairs under data/processed if regenerating)
 python -m evaluate.run_eval --labels annotations/labels_aidev.csv --out paper/manuscript/tables/field
 ```
 
-Optional baseline scanner: install `zizmor` into the same venv (`pip install zizmor`).
+Details: [`replication/REPRODUCE.md`](replication/REPRODUCE.md)
 
-Secrets for optional GitHub/HF sampling: copy `.env.example` → `.env` (never commit `.env`).
+## What’s in this repo
 
-## Layout
-
-| Path | Purpose |
+| Path | Content |
 |------|---------|
-| `src/` | Parser, policy validator, evaluation |
-| `policies/` | OWASP-mapped rule pack + formal map |
-| `tests/` | Pin semantics and rule tests |
-| `data/sample/` | Controlled before/after fixtures |
-| `annotations/` | Field labels, 330-pair manifest, human labels |
-| `paper/manuscript/tables/` | Frozen metrics / confusion matrices |
-| `replication/` | Reproduce, sampling protocol, publish guide, env freeze |
+| `src/` | Validator and evaluation code |
+| `policies/` | Rule pack + OWASP map |
+| `tests/` | Unit tests (incl. pin semantics) |
+| `data/sample/` | Controlled YAML fixtures |
+| `annotations/` | Field labels + 330-pair manifest |
+| `paper/manuscript/tables/` | Frozen metrics |
+| `replication/` | Reproduce / sampling / env freeze |
 
-## Field freeze headline (N=330)
-
-- Gold regressions: **46/330 (13.9%)**
-- Policy validator: **P≈0.88 · R≈0.93 · F1≈0.91 · FPR≈0.02**
-- Source of truth: `paper/manuscript/tables/field/eval_summary.json`
-
-## Publish to GitHub
-
-Follow **`replication/PUBLISH.md`** (exact steps). Do not upload `.env`.
-
-## Ethics
-
-Public GitHub / AIDev artifacts only. Do not commit tokens or real secrets.
-
-## License
-
-See `LICENSE`.
+Manuscript Word files and long draft notes are **not** published here.
