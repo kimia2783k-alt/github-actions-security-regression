@@ -5,7 +5,9 @@
 **Corresponding author:** [email — To be filled]  
 **Manuscript type:** Full-Text Paper  
 **Target venue:** Journal of Artificial Intelligence, Applications and Innovations (JAIAI)  
-**Status:** Delivery manuscript v0.5 — pin-semantics freeze (comment-only SHA ≠ pin); controlled + field N=330 + single-annotator human n=63  
+**Status:** Delivery manuscript v0.5 — pin-semantics corrected (`uses@ref` SHA only); field N=330 + single-annotator human n=63  
+
+
 **Date:** 5 November 2026
 
 ---
@@ -27,7 +29,7 @@ Prior work measures how often agents touch CI/CD YAML and whether builds succeed
 **Research questions.**
 
 - **RQ1:** What types of security regressions appear in agent-related workflow diffs, and how are they distributed?
-- **RQ2:** Do regression rates differ between agent-labeled and human-labeled changes under a matched setting?
+- **RQ2:** In this observational field pilot, how do regression rates compare between agent-labeled and human-labeled strata (not a randomized or fully balanced design)?
 - **RQ3:** Can a policy-based before/after validator detect regressions competitively versus an after-oriented static baseline?
 
 **Contributions.** (1) An OWASP-mapped regression taxonomy (R01–R15). (2) An open policy-based before/after validator. (3) Controlled evaluation on fifteen labeled pairs. (4) A field pilot on N=330 AIDev/GitHub pairs plus a single-annotator human subset (n=63).
@@ -72,7 +74,7 @@ We monitor fifteen automated classes. Rules are versioned in `policies/owasp_cic
 | R14 | dangerous_interactive_trigger_introduced | CICD-SEC-4 |
 | R15 | github_env_injection_risk_added | CICD-SEC-4 |
 
-R99 is reserved for manual residuals. For R05/R06, an effective pin requires a 40-hex `@ref` commit SHA; a YAML `# <sha>` comment does not change the GitHub-resolved Action reference and is not treated as a pin.
+R99 is reserved for manual residuals. **Pin criterion (R05/R06).** A valid fixed Action version is only a 40-hex commit SHA in the `uses` `@ref` itself (what GitHub resolves). A SHA written merely in a YAML `# …` comment does **not** change the resolved reference and is **not** treated as a pin. The validator’s `effectively_pinned` flag equals `@ref`-SHA pinning only; earlier draft guidance that counted comment-only SHAs as pins was incorrect and has been corrected in code, tests, and the reported freeze.
 
 ### 4.2 Policy validator
 
@@ -96,9 +98,9 @@ Human labels use a **single-annotator evaluation**. An 80-pair stratified pack (
 
 **Controlled benchmark.** Fifteen synthetic before/after pairs under `data/sample/` (ten positives spanning major rules; five negatives including hardening and non-worsening edits). Labels in `annotations/labels_sample.csv`.
 
-**Field pilot.** Merged AIDev/GitHub pairs with workflow materialization in October 2026: N=330 (OpenAI_Codex 200, Claude_Code 20, Copilot 20, Cursor 6, Devin 4, human 80). Codex rows from an AIDev stream with `(pr_id, filename)` deduplication; other agents via GitHub Files API; human controls repo-matched to the agent index with bot exclusion and `(repo, path)` deduplication. Full index: `annotations/field_pairs_manifest_330.csv` (SHA-256 in companion `.meta.json`). Protocol: `replication/SAMPLING_PROTOCOL.md`. Evaluation via `python -m evaluate.run_eval`.
+**Field pilot.** Merged AIDev/GitHub pairs with workflow materialization in October 2026: N=330 (OpenAI_Codex 200, Claude_Code 20, Copilot 20, Cursor 6, Devin 4, human 80). Codex rows from an AIDev stream with `(pr_id, filename)` deduplication; other agents via GitHub Files API; human controls repo-matched to the agent index with bot exclusion and `(repo, path)` deduplication. Full index: `annotations/field_pairs_manifest_330.csv` (SHA-256 in companion `.meta.json`). Protocol: `replication/SAMPLING_PROTOCOL.md`. Evaluation via `python -m evaluate.run_eval`. Stratum sizes are unequal and assignment is not randomized; agent–human contrasts are therefore **observational**, not causal estimates from a balanced experiment.
 
-**Metrics.** Precision, recall, F1, FPR, FNR; stratum rates. Pooled agent vs human rates use Pearson’s χ² on the 2×2 contingency table via `scipy.stats.chi2_contingency` with the library default **Yates continuity correction** (`correction=True`); if any cell were &lt;5 the code path switches to Fisher’s exact test (`fisher_exact`).
+**Metrics.** Precision, recall, F1, FPR, FNR; stratum rates. Pooled agent vs human rates use Pearson’s χ² on the 2×2 contingency table via `scipy.stats.chi2_contingency` with the library default **Yates continuity correction** (`correction=True`); if any cell were &lt;5 the code path switches to Fisher’s exact test (`fisher_exact`). That test summarizes association in this sample; it does not justify a causal AI-versus-human claim.
 
 **Reproducibility environment (freeze pin-semantics-v0.5).** Windows 11 (10.0.26200); Python 3.14.7; `ruamel.yaml` 0.19.1; `scipy` 1.18.1; `pytest` 9.1.1; zizmor 1.31.1; AMD64 host, 24 logical CPUs. Details: `replication/ENV_FREEZE.md`.
 
@@ -143,7 +145,7 @@ On the synthetic suite, agent-tagged positives were all regressions (9/9) versus
 | All AI (pooled) | 250 | 0.160 |
 | Human controls | 80 | 0.075 |
 
-Audited regression rate: **46/330 (13.9%)**. Qualitatively, automated hits are dominated by unpinning/untrusted-action patterns and dangerous permission scopes; we do **not** invent a full R01–R15 frequency table in prose—per-rule detector hit counts must be read from `paper/manuscript/tables/field/eval_summary.json` (`rule_counts`). Field zizmor baselines in that same freeze report `zizmor_cli_available: true` (real CLI, not proxy); re-check this flag after any regeneration before submission. Pooled agent vs human rates: 0.160 vs 0.075 (Pearson χ² with Yates continuity correction: χ²≈2.976, df=1, p≈0.0845; not significant at α=0.05). Without continuity correction the same table yields p≈0.056; we report the default corrected test used by the evaluation code. Field validator scores are informative for a specified gate but partly expected because gold and detector share the v3 predicate family.
+Audited regression rate: **46/330 (13.9%)**. Qualitatively, automated hits are dominated by unpinning/untrusted-action patterns and dangerous permission scopes; we do **not** invent a full R01–R15 frequency table in prose—per-rule detector hit counts must be read from `paper/manuscript/tables/field/eval_summary.json` (`rule_counts`). Field zizmor baselines in that same freeze report `zizmor_cli_available: true` (real CLI, not proxy); re-check this flag after any regeneration before submission. Pooled agent vs human rates: 0.160 vs 0.075 (Pearson χ² with Yates continuity correction: χ²≈2.976, df=1, p≈0.0845; not significant at α=0.05). Without continuity correction the same table yields p≈0.056; we report the default corrected test used by the evaluation code. This contrast remains an **observational** stratum comparison under unequal, non-random sampling—not evidence of a causal AI effect. Field validator scores are informative for a specified gate but partly expected because gold and detector share the v3 predicate family.
 
 ### 6.4 Single-annotator human subset
 
@@ -163,13 +165,15 @@ Permissions escalation to `write-all`, `pull_request_target` with untrusted chec
 
 ## 7. Discussion
 
-Security regression is a property of a *change*. After-only scanners answer residual risk in the landing file; regression policies answer whether the PR made security worse. Organizations should run both. Latency of the policy check is compatible with CI merge gates on workflow paths. The field agent–human gap is directionally elevated but not statistically conclusive. The human subset supports that the validator tracks human-perceived worsenings, while FPR ≈0.19 shows remaining disagreements between formal predicates and human judgment. Effective Action pinning is defined strictly as a 40-hex `@ref` commit SHA; a trailing `# <sha>` comment beside a floating tag is not treated as a pin.
+Security regression is a property of a *change*. After-only scanners answer residual risk in the landing file; regression policies answer whether the PR made security worse. Organizations should run both. Latency of the policy check is compatible with CI merge gates on workflow paths. The field agent–human gap is directionally elevated but not statistically conclusive and must be read as observational. The human subset supports that the validator tracks human-perceived worsenings, while FPR ≈0.19 shows remaining disagreements between formal predicates and human judgment.
+
+**Pin semantics (corrected).** Effective pinning is a 40-hex SHA in `uses@ref` only. Comment-only `# <sha>` tokens are ignored for R05/R06. After correcting that predicate, unit tests and controlled/field/human evaluations were re-run; reported metrics are the **pin-semantics-v0.5** freeze (field validator ≈P0.88 / R0.93 / F1 0.91; R05 hits=6, R06 hits=37 in `rule_counts`).
 
 ---
 
 ## 8. Threats to Validity
 
-**Construct.** Organization policies may diverge from default rules; declarative packs make disagreements tunable. **Internal.** Controlled F1=1.00 risks overfitting; field scores are predicate-aligned. **External.** N=330 and small Cursor/Devin cells limit generality. **Label.** Human evidence is a single-annotator subset (n=63) without an independent second rater or Cohen’s κ; 17 pack rows lacked YAML. **Baseline.** After-only zizmor as a regression label is a strict operationalization; finding-set diff is fairer but still noisier than the policy gate.
+**Construct.** Organization policies may diverge from default rules; declarative packs make disagreements tunable. **Internal.** Controlled F1=1.00 risks overfitting; field scores are predicate-aligned under the corrected `@ref`-only pin rule. **External.** N=330 and small Cursor/Devin cells limit generality; agent vs human strata are observational, not randomized or fully balanced. **Label.** Human evidence is a single-annotator subset (n=63) without an independent second rater or Cohen’s κ; 17 pack rows lacked YAML. **Baseline.** After-only zizmor as a regression label is a strict operationalization; finding-set diff is fairer but still noisier than the policy gate.
 
 ---
 
@@ -205,8 +209,7 @@ This checklist is an editorial aid and is not part of the scientific article. Co
 - [x] Insert the exact public URL and release tag of the research implementation (https://github.com/kimia2783k-alt/github-actions-security-regression / `pin-semantics-v0.5`).
 - [x] Confirm the field-sampling dates, retrieval process, repository matching, deduplication, and workflow-pair manifest (`replication/SAMPLING_PROTOCOL.md`; `annotations/field_pairs_manifest_330.csv`).
 - [x] Copy the exact R01–R15 OWASP mapping from `policies/rule_owasp_map.md` (Table A in §4.1).
-- [x] Audit whether comment-only SHA values are treated as actual pins; a YAML comment does not change the GitHub-resolved Action reference (`docs/pin_semantics_audit.md`; `effectively_pinned` = `@ref` 40-hex only).
-- [x] If pinning logic is corrected, rerun relevant tests, policy-v3 gold generation, and affected R05/R06 metrics; clearly version the new results (**pin-semantics-v0.5**; field validator ≈P0.88/R0.93/F1 0.91; human F1≈0.91).
+- [x] Pin semantics corrected: comment-only SHA is not a pin; tests + field/human re-eval frozen as **pin-semantics-v0.5** (≈P0.88/R0.93/F1 0.91).
 - [x] Confirm the exact statistical test and continuity-correction setting behind the reported p-value (Pearson χ² via `scipy.stats.chi2_contingency`, **Yates correction on**; p≈0.0845).
 - [x] Add hardware, operating system, Python, parser, and zizmor versions for reproducibility (`replication/ENV_FREEZE.md`).
 - [ ] Complete ethics, funding, conflict-of-interest, acknowledgments, and author-contribution statements. *(Ethics/COI/acks drafted; funding + CRediT still author-filled.)*
